@@ -1,0 +1,575 @@
+@font-face {
+  font-family: 'merriweather-regular';
+  src: url("/fonts/post/merriweather-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'merriweather-italic';
+  src: url("/fonts/post/merriweather-italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'merriweather-bold';
+  src: url("/fonts/post/merriweather-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'merriweather-bolditalic';
+  src: url("/fonts/post/merriweather-bolditalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'merriweather-black';
+  src: url("/fonts/post/merriweather-black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'merriweather-heavyitalic';
+  src: url("/fonts/post/merriweather-heavyitalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'merriweather-light';
+  src: url("/fonts/post/merriweather-light.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'merriweather-lightitalic';
+  src: url("/fonts/post/merriweather-lightitalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* New Import */
+@font-face {
+  font-family: 'Bevan';
+  src: url("/fonts/post/Bevan.ttf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+h1, h2, h3, h4 {
+  font-family: 'merriweather-bold';
+  font-weight: 700;
+  font-style: normal;
+}
+
+[role="note"] {
+  font-family: 'merriweather-light';
+  font-weight: 200;
+  font-style: normal;
+}
+
+blockquote {
+  font-family: 'merriweather-lightitalic';
+  font-weight: 200;
+  font-style: italic;
+}
+
+a[role="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+  font-family: 'merriweather-regular';
+  font-weight: 400;
+  font-style: normal;
+}
+
+h5, h6, dl dt {
+  font-family: 'merriweather-italic';
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+/* MY CODE */
+
+* {
+  text-decoration: none;
+}
+
+body{
+}
+
+/* HEADER */
+
+header{
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  height: 90px;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index:99;
+}
+
+
+header .header-logo{
+  text-align: center;
+  margin-top: 10px;
+  padding-left: 10px;
+  float: left;
+}
+
+header .header-brand{
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+  margin: 31px 0;
+  text-align: left;
+  line-height: 38px;
+  border-right: 3px solid #111;
+  padding: 0 20px 0 5px;
+  float: left;
+}
+
+header .header-brand:hover{
+  text-decoration: none;
+}
+
+
+header nav ul{
+  display: flex;
+  padding: 0;
+  margin: 20px 0px 0px 20px;
+  float: left;
+}
+
+header nav ul li{
+  list-style: none;
+  padding: 0 16px;
+  line-height: 60px;
+}
+
+header nav ul li a{
+  font-family: Catamaran;
+  font-size: 20px;
+  color: #111;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+}
+
+header nav ul li:hover,
+header nav ul li:hover a{
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+.menu-toggle{
+  color: #111;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  padding-top: 20px;
+  display: none;
+}
+
+/* DROPDOWN */
+
+.dropbtn {
+    display: block;
+    font-family: Catamaran;
+    background-color: #fff;
+    color: #111;
+    padding: 18px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    line-height: 50px;
+    width: 250px;
+}
+
+.dropdown {
+    position: left;
+    display: block;
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    left: auto;
+}
+
+.dropdown-content a {
+    font-size: 20px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.dropdown-content a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #fff;
+    background-color: #333;
+}
+
+@media (max-width: 1200px) {
+
+  .dropdown
+  {
+    display: none;
+  }
+
+}
+@media (max-width: 1000px) {
+
+  header
+  {
+    padding: 0;
+  }
+
+  .menu-toggle
+  {
+    display: block;
+    padding: 25px 20px;
+  }
+
+  header nav
+  {
+    float: right;
+    position: absolute;
+    width: 100%;
+    height: calc(300vh - 50px);
+    background: #fff;
+    opacity: 0.8;
+    top: 90px;
+    left: -100%;
+    transition: 0.5s;
+  }
+
+  header nav.active
+  {
+    left: 0;
+  }
+
+  header nav ul
+  {
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 48%;
+    transform: translatex(-50%);
+  }
+
+  header nav ul li {
+    text-align: center;
+  }
+
+  header nav ul li a{
+    font-size: 35px;
+  }
+
+  header nav ul li:hover,
+  header nav ul li:hover a{
+    color: #000;
+    background-color: transparent !important;
+    font-weight: 900;
+  }
+
+
+}
+
+/* RETUTN to TOP ARROW */
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 15px;
+    top: 13px;
+    font-size: 23px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+@media (max-width: 960px) {
+
+  #return-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: rgb(0, 0, 0);
+      background: rgba(0, 0, 0, 0.7);
+      width: 35px;
+      height: 35px;
+      display: block;
+      text-decoration: none;
+      -webkit-border-radius: 35px;
+      -moz-border-radius: 35px;
+      border-radius: 35px;
+      display: none;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+  }
+
+  #return-to-top i {
+      color: #fff;
+      margin: 0;
+      position: relative;
+      left: 11px;
+      top: 9px;
+      font-size: 15px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+  }
+
+
+}
+
+
+/* SECTION */
+
+#full-page-section {
+  height: 100vh;
+  position: relative;
+}
+
+#full-page-section:nth-of-type(2) {
+  background-color: #333;
+}
+
+#full-page-section:nth-of-type(4) {
+  background-color: #333;
+}
+
+#full-page-section:nth-of-type(6) {
+  background-color: #333;
+}
+/* SCROLL DOWN */
+
+svg{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+/* BANNER TITLE */
+
+.banner_title {
+  position:absolute;
+  bottom: 20%;
+  left:5%;
+  margin: 0;
+  font-size: 150px;
+  line-height: 1em;
+  opacity: 1;
+  font-weight: 900;
+  font-family: "Impact", sans-serif;
+}
+
+.left{
+  text-align: left;
+}
+
+.banner_title:first-of-type {
+  -webkit-animation: 0.5s ease-in toleft;
+          animation: 0.5s ease-in toleft;
+}
+.banner_title:last-of-type {
+  -webkit-animation: 0.5s ease-in toright;
+          animation: 0.5s ease-in toright;
+}
+
+@media (max-width: 1400px) {
+  .banner_title {
+    font-size: 110px;
+  }
+}
+
+@media (max-width: 970px) {
+  .banner_title {
+    font-size: 95px;
+    bottom: 15%;
+  }
+}
+
+@media (max-width: 785px) {
+  .banner_title {
+    font-size: 80px;
+    bottom: 15%;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner_title {
+    font-size: 70px;
+    bottom: 35%;
+  }
+}
+
+@media (max-width: 445px) {
+  .banner_title {
+    font-size: 55px;
+    bottom: 35%;
+  }
+}
+
+/* FOOTER */
+
+#myFooter{
+    padding-top:32px;
+}
+
+#myFooter .container{
+    text-align: center;
+}
+
+#myFooter .footer-copyright{
+    margin-bottom: 35px;
+    text-align: center;
+    color: #b2b2b2;
+}
+
+#myFooter ul{
+    list-style-type: none;
+    padding-top: 10px;
+    margin-bottom: 18px;
+}
+
+#myFooter a{
+    color: #fff;
+    font-size: 18px;
+}
+
+#myFooter li{
+    display: inline-block;
+    margin: 0px 15px;
+    line-height: 2;
+}
+
+#myFooter .footer{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #3a3a3a;
+}
+
+#myFooter .fab,
+#myFooter .fas{
+    font-size: 36px;
+    margin-right: 15px;
+    margin-left: 20px;
+    background-color: white;
+    color: #d0d0d0;
+    border-radius: 51%;
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 43px;
+    text-decoration: none;
+    transition:color 0.2s;
+}
+
+#myFooter .fa-github{
+    font-size: 42px;
+}
+
+#myFooter .fa-github:hover{
+  /* color:#333; */
+  color: #6e5494
+}
+
+#myFooter .fa-github:focus{
+  /* color:#333; */
+  color: #6e5494
+}
+
+#myFooter .fa-twitter:hover{
+  color:#1da1f2;
+}
+
+#myFooter .fa-twitter:focus{
+  color:#1da1f2;
+}
+
+#myFooter .fa-envelope{
+    font-size: 30px;
+}
+
+#myFooter .fa-envelope:hover{
+    color: #ea4335;
+}
+
+#myFooter .fa-envelope:focus{
+    color:#ea4335;
+}
